@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: white;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+h1,
+strong {
+    color: #f6f6f6;
+    font-size: 32px;
+    font-family: Krona One;
+    font-weight: 400;
+    line-height: 56px;
+    word-wrap: break-word;
+}
+
+strong {
+    color: #65b741;
+}
+
+p {
+    color: #f6f6f6;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 36px;
+    word-wrap: break-word;
+}
+
+main {
+    width: 140%;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+}
+
+img {
+    margin-left: 40%;
+    width: 40%;
+    border-radius: 16px;
+    border: 2px solid #65b741;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 36px;
+    word-wrap: break-word;
+    margin-bottom: 4%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#github,
+#instagram {
+    margin-top: 5%;
+    margin-right: 2%;
+    background-color: #65b741;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+
+@media screen and (min-width: 900px) {
+    a:hover{
+        transform: scale(1.05);
+    }
+}
+
+@media screen and (max-width: 1195px) {
+    h1,
+    strong {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        width: 60%;
+        margin-left: 33%;
+    }
+
+    #content {
+        margin-left: 6%;
+    }
+
+    footer {
+        margin-top: 7%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    h1,
+    strong {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    #content {
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        margin: 0;
+    }
+
+    img {
+        margin-left: 5%;
+    }
+
+    main{
+        width: 200%;
+    }
+
+    footer{
+        margin-top: 10%;
+    }
+
+    #github, #instagram{
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 654px) {
+    img{
+        width: 85%;
+    }
+
+    main{
+        width: 500%;
+    }
+
+    footer{
+        margin-top: 18%;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    main{
+        width: 900%;
+    }   
+
+    img{
+        margin-left: 5%;
+        margin-top: 8%;
+    }
+
+    h1,
+    strong {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    #github, #instagram{
+        padding: 7px;
+    }
+}
+
+@media screen and (max-width:319px) {
+    h1,
+    strong {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 8px;
+    }   
+
+    main{
+        width: 1500%;
+    }
+}
